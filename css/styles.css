@@ -5,17 +5,39 @@ body {
     font-family: 'Oxygen', sans-serif;
 }
 
-
 /** HEADER **/
 #header-nav {
     background-color: #f6b319;
-    border-radius: 0;
-    border: 0;
 }
 
 #logo-image {
-    background: url(/images/restaurant-logo_large.png);
     width: 150px;
     height: 150px;
-    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand div {
+    padding-top: 15px;
+}
+
+.navbar-brand div h1 { /* Restaurant name */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #222;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    line-height: .75;
+}
+
+.navbar-brand div span { /* Kosher cert */
+    color: #000;
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+.navbar-brand div img { /* Star-K */
+    vertical-align: middle;
+    margin-left: 10px;
 }
