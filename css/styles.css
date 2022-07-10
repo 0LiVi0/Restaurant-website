@@ -70,6 +70,57 @@ button.navbar-toggler {
     border: 1px solid #61122f;
 }
 
-.navbar-toggler-icon {
-    color: #61122f;
+/* END HEADER */
+
+/********** Large device only **********/
+@media (mix-widht: 1200px) {
+
+}
+
+/********** Medium device only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-image { /* Restaurant logo */
+        background: url(/images/restaurant-logo_medium.png);
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+    }
+}
+
+/********** Small device only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand div h1 { /* Restaurant name */
+        font-size: 1.2em;
+    }
+    
+    #logo-image { /* Restaurant logo */
+        display: none;
+    }
+
+    #nav-buttons a { /* Phone number */
+        font-size: 1em;
+    }
+
+    .navbar-brand div span { /* Kosher cert */
+        font-size: .6em;
+    }
+
+    .navbar-brand div img { /* Star-K */
+        height: 20px;
+    }
+}
+
+/********** Extra small device only **********/
+@media (max-width: 767px) { /* Restaurant logo */
+    #logo-image {
+        display: none;
+    }
+
+    .navbar-brand div h1 { /* Restaurant name */
+        font-size: 4vw;
+    }
+
+    .nav-link img { /* Collapsing menu icons */
+        margin-right: 10px;
+    }
 }
