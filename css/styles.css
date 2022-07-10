@@ -41,3 +41,35 @@ body {
     vertical-align: middle;
     margin-left: 10px;
 }
+
+#navbarNavAltMarkup {
+    margin-top: 0;
+}
+
+#nav-buttons a {
+    color: #951c49;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#nav-buttons a:hover {
+    color: #E7E7E7;
+}
+
+#phone span {
+    font-size: 1.2em;
+}
+
+#phone span div {
+    font-size: 0.7em;
+    margin-left: 45px;
+    color: #557c3e;
+}
+
+button.navbar-toggler {
+    border: 1px solid #61122f;
+}
+
+.navbar-toggler-icon {
+    color: #61122f;
+}
