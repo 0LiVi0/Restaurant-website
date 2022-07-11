@@ -123,4 +123,17 @@ button.navbar-toggler {
     .nav-link img { /* Collapsing menu icons */
         margin-right: 10px;
     }
+
+    #call-btn { /* Calling Button */
+        display: grid !important;
+        margin-top: 20px;
+    }
+
+    #call-btn button {
+        background-color: #f6b319;
+        border: 2px solid #fff;
+    }
+
+    /* TODO: доробити кнопку дзвінку (поміняти колір іконки, тексту), додати надпис *We deliver */
 }
+
