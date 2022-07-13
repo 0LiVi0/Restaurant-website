@@ -113,6 +113,7 @@ button.navbar-toggler {
 #menu-tile span, #specials-tile span, #map-tile span {
     position: absolute;
     bottom: 0;
+    right: 0;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -120,9 +121,56 @@ button.navbar-toggler {
     background-color: #000;
     opacity: .8;
     color: #fff;
+    border-radius: 5px;
 }
 
 /* END HOME PAGE */
+
+/* FOOTER */
+
+footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+footer div.row {
+    margin-bottom: 35px;
+}
+
+#hours, #address {
+    line-height: 2;
+}
+
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+
+#address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+#testimonials {
+    margin-top: 25px;
+}
+
+.blockquote-footer::before {
+    content: "";
+}
+
+footer .row hr {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+
+/* END FOOTER */
 
 /********** Large device only **********/
 @media (min-width: 1200px) {
@@ -159,6 +207,14 @@ button.navbar-toggler {
 
     .navbar-brand div img { /* Star-K */
         height: 20px;
+    }
+
+    footer { /* Footer */
+        text-align: center;
+    }
+
+    footer section {
+        margin-bottom: 25px;
     }
 }
 
@@ -204,6 +260,15 @@ button.navbar-toggler {
         width: 360px;
         margin: 0 auto 15px;
     }
+
+    footer { /* Footer */ 
+        text-align: center;
+    }
+
+    footer section {
+        margin-bottom: 25px;
+    }
+
 }
 
 /********** Super small device only **********/
@@ -220,5 +285,9 @@ button.navbar-toggler {
     #menu-tile, #specials-tile {
         width: 280px;
         margin: 0 auto 15px;
+    }
+
+    footer { /* Footer */ 
+        text-align: center;
     }
 }
