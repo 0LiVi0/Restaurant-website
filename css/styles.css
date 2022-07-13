@@ -72,9 +72,61 @@ button.navbar-toggler {
 
 /* END HEADER */
 
-/********** Large device only **********/
-@media (mix-widht: 1200px) {
+/* HOME PAGE */
 
+#jumbotron {
+    margin-top: 20px;
+    box-shadow: 0 0 50px #3F0C1F;
+}
+
+#jumbotron, #jumbotron img {
+    border-radius: 5px;
+}
+
+#home-tiles {
+    margin-top: 20px;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+    background: url(../images/menu-tile.jpg) no-repeat;
+    background-position: center;
+}
+
+#specials-tile {
+    background: url(../images/specials-tile.jpg) no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    background-color: #000;
+    opacity: .8;
+    color: #fff;
+}
+
+/* END HOME PAGE */
+
+/********** Large device only **********/
+@media (min-width: 1200px) {
+    
 }
 
 /********** Medium device only **********/
@@ -88,7 +140,7 @@ button.navbar-toggler {
 }
 
 /********** Small device only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .navbar-brand div h1 { /* Restaurant name */
         font-size: 1.2em;
     }
@@ -124,7 +176,8 @@ button.navbar-toggler {
         margin-right: 10px;
     }
 
-    #call-btn { /* Calling Button */
+    /* Calling Button */
+    #call-btn {
         display: grid !important;
         margin-top: 20px;
     }
@@ -132,8 +185,40 @@ button.navbar-toggler {
     #call-btn button {
         background-color: #f6b319;
         border: 2px solid #fff;
+        vertical-align: middle;
     }
 
-    /* TODO: доробити кнопку дзвінку (поміняти колір іконки, тексту), додати надпис *We deliver */
+    #call-btn span {
+        text-align: center;
+        font-size: .8em;   
+        font-weight: bold;
+    }
+
+    #call-btn button span {
+        color: #61122f;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    #menu-tile, #specials-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
 }
 
+/********** Super small device only **********/
+@media (max-width: 425px) {
+    .navbar-brand div h1 { /* Restaurant name */
+        font-size: 4.5vw;
+        padding-top: 5px;
+    }
+
+    .navbar-brand div img { /* Star-K */
+        height: 20px;
+    }
+
+    #menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+    }
+}
