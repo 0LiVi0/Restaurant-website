@@ -8,6 +8,7 @@ body {
 /** HEADER **/
 #header-nav {
     background-color: #f6b319;
+    margin-bottom: 20px;
 }
 
 #logo-image {
@@ -82,11 +83,9 @@ body {
 button.navbar-toggler {
     border: 1px solid #61122f;
 }
+/** END HEADER **/
 
-/* END HEADER */
-
-/* HOME PAGE */
-
+/** HOME PAGE **/
 #jumbotron {
     margin-top: 20px;
     box-shadow: 0 0 50px #3F0C1F;
@@ -136,11 +135,9 @@ button.navbar-toggler {
     color: #fff;
     border-radius: 5px;
 }
+/** END HOME PAGE **/
 
-/* END HOME PAGE */
-
-/* FOOTER */
-
+/** FOOTER **/
 footer {
     margin-top: 30px;
     padding-top: 30px;
@@ -180,10 +177,48 @@ footer .row hr {
     margin: auto;
     margin-bottom: 10px;
 }
+/** END FOOTER **/
+
+/** MENU CATEGORIES **/
+.category-tile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border-radius: 5px;
+}
+
+.category-tile img {
+    border-radius: 5px;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    text-transform: uppercase;
+    opacity: .8;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+    margin-bottom: 50px;
+}
 
 
 
-/* END FOOTER */
+/** END MENU CATEGORIES**/
 
 /********** Large device only **********/
 @media (min-width: 1200px) {
