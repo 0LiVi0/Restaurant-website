@@ -246,6 +246,10 @@ footer .row hr {
     }
 
     /* Calling Button */
+    a {
+        text-decoration: none !important;
+    }
+
     #call-btn {
         display: grid !important;
         margin-top: 20px;
@@ -263,7 +267,7 @@ footer .row hr {
         font-weight: bold;
     }
 
-    #call-btn button span {
+    #call-btn button a span {
         color: #61122f;
         font-size: 1em;
         font-weight: normal;
