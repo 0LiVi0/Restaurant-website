@@ -38,6 +38,7 @@ body {
 }
 
 .navbar-brand div img { /* Star-K */
+    background: url(images/star-k-logo.png);
     vertical-align: middle;
     margin-left: 10px;
 }
@@ -50,6 +51,18 @@ body {
     color: #951c49;
     text-align: center;
     font-size: 1.1em;
+}
+
+#nav-buttons a:nth-child(1) {
+    background: url(images/currency-dollar.svg);
+}
+
+#nav-buttons a:nth-child(2) {
+    background: url(images/info-circle.svg);
+}
+
+#nav-buttons a:nth-child(3) {
+    background: url(images/award.svg);
 }
 
 #nav-buttons a:hover {
@@ -180,7 +193,7 @@ footer .row hr {
 /********** Medium device only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
     #logo-image { /* Restaurant logo */
-        background: url(/images/restaurant-logo_medium.png);
+        background: url(images/restaurant-logo_medium.png);
         width: 100px;
         height: 100px;
         margin: 5px 5px 5px 0px;
